@@ -39,50 +39,73 @@ export default function Home() {
           <li>✔ Certified CFIU Inspector</li>
           <li>✔ 10+ Years Flooring Installation Experience</li>
           <li>✔ Unbiased Third-Party Inspection Reports</li>
-          <li>✔ Detailed Moisture & Installation Analysis</li>
+          <li>✔ Detailed Moisture & Subfloor Testing</li>
           <li>✔ Trusted by Homeowners, Contractors & Attorneys</li>
         </ul>
-
-        <p style={{ marginTop: "30px", fontSize: "18px" }}>
-          If you're dealing with buckling hardwood, lifting LVP, moisture issues, or an installation dispute,
-          I provide clear, professional reports that protect your investment and help resolve flooring conflicts professionally.
-        </p>
       </div>
 
-      <div style={{ marginTop: "70px", textAlign: "center" }}>
+      <div style={{ marginTop: "70px" }}>
         <h2 style={{ fontSize: "28px", marginBottom: "20px" }}>
-          What You Can Expect
+          Request an Inspection
         </h2>
 
-        <p style={{ fontSize: "18px", lineHeight: "1.8", maxWidth: "800px", margin: "auto" }}>
-          When you hire Country Roads Floor Inspection, you receive a detailed,
-          professional inspection report outlining installation errors, moisture conditions,
-          manufacturer guideline compliance, and clear photographic documentation.
-        </p>
-
-        <p style={{ fontSize: "18px", marginTop: "20px" }}>
-          Fast scheduling available. Serving MD, DC, VA & WV.
-        </p>
-
-        <a
-          href="tel:13047039675"
-          style={{
-            display: "inline-block",
-            marginTop: "30px",
-            background: "#111",
-            color: "#fff",
-            padding: "15px 35px",
-            fontSize: "20px",
-            fontWeight: "bold",
-            textDecoration: "none",
-            borderRadius: "6px"
-          }}
+        <form
+          action="https://formsubmit.co/rogerlnestor@gmail.com"
+          method="POST"
+          style={{ maxWidth: "600px", margin: "auto", textAlign: "left" }}
         >
-          Schedule Your Inspection Today
-        </a>
+          <input type="hidden" name="_captcha" value="false" />
+
+          <input
+            type="text"
+            name="name"
+            placeholder="Full Name"
+            required
+            style={{ width: "100%", padding: "12px", marginBottom: "15px" }}
+          />
+
+          <input
+            type="tel"
+            name="phone"
+            placeholder="Phone Number"
+            required
+            style={{ width: "100%", padding: "12px", marginBottom: "15px" }}
+          />
+
+          <input
+            type="email"
+            name="email"
+            placeholder="Email Address"
+            required
+            style={{ width: "100%", padding: "12px", marginBottom: "15px" }}
+          />
+
+          <textarea
+            name="message"
+            placeholder="Briefly describe the flooring issue..."
+            rows="4"
+            required
+            style={{ width: "100%", padding: "12px", marginBottom: "15px" }}
+          ></textarea>
+
+          <button
+            type="submit"
+            style={{
+              width: "100%",
+              background: "#111",
+              color: "#fff",
+              padding: "15px",
+              fontSize: "18px",
+              fontWeight: "bold",
+              border: "none",
+              borderRadius: "6px"
+            }}
+          >
+            Submit Inspection Request
+          </button>
+        </form>
       </div>
 
     </main>
   );
 }
-
