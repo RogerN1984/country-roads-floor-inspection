@@ -3,7 +3,7 @@ export default function Home() {
     <main style={{ padding: "80px 20px", maxWidth: "1000px", margin: "auto", textAlign: "center" }}>
       
       <h1 style={{ fontSize: "40px", marginBottom: "20px" }}>
-        Certified Floor Inspector Serving MD, DC & WV
+        Certified Floor Inspector Serving MD, DC, VA & WV
       </h1>
 
       <p style={{ fontSize: "20px", marginBottom: "30px" }}>
@@ -49,6 +49,40 @@ export default function Home() {
         </p>
       </div>
 
+      <div style={{ marginTop: "70px", textAlign: "center" }}>
+        <h2 style={{ fontSize: "28px", marginBottom: "20px" }}>
+          What You Can Expect
+        </h2>
+
+        <p style={{ fontSize: "18px", lineHeight: "1.8", maxWidth: "800px", margin: "auto" }}>
+          When you hire Country Roads Floor Inspection, you receive a detailed,
+          professional inspection report outlining installation errors, moisture conditions,
+          manufacturer guideline compliance, and clear photographic documentation.
+        </p>
+
+        <p style={{ fontSize: "18px", marginTop: "20px" }}>
+          Fast scheduling available. Serving MD, DC, VA & WV.
+        </p>
+
+        <a
+          href="tel:13047039675"
+          style={{
+            display: "inline-block",
+            marginTop: "30px",
+            background: "#111",
+            color: "#fff",
+            padding: "15px 35px",
+            fontSize: "20px",
+            fontWeight: "bold",
+            textDecoration: "none",
+            borderRadius: "6px"
+          }}
+        >
+          Schedule Your Inspection Today
+        </a>
+      </div>
+
     </main>
   );
 }
+
