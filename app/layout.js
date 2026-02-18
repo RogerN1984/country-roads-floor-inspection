@@ -7,6 +7,60 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "HomeAndConstructionBusiness",
+              "name": "Country Roads Floor Inspection",
+              "url": "https://countryroadsfloorinspection.com",
+              "telephone": "(304) 703-9675",
+              "areaServed": [
+                {
+                  "@type": "City",
+                  "name": "Romney",
+                  "address": {
+                    "@type": "PostalAddress",
+                    "addressRegion": "WV",
+                    "addressCountry": "US"
+                  }
+                },
+                {
+                  "@type": "City",
+                  "name": "Baltimore",
+                  "address": {
+                    "@type": "PostalAddress",
+                    "addressRegion": "MD",
+                    "addressCountry": "US"
+                  }
+                },
+                {
+                  "@type": "City",
+                  "name": "Washington",
+                  "address": {
+                    "@type": "PostalAddress",
+                    "addressRegion": "DC",
+                    "addressCountry": "US"
+                  }
+                },
+                {
+                  "@type": "City",
+                  "name": "Winchester",
+                  "address": {
+                    "@type": "PostalAddress",
+                    "addressRegion": "VA",
+                    "addressCountry": "US"
+                  }
+                }
+              ],
+              "priceRange": "$$"
+            })
+          }}
+        />
+      </head>
+
       <body style={{ margin: 0, fontFamily: "Arial, sans-serif" }}>
 
         {/* NAVIGATION */}
