@@ -1,4 +1,4 @@
- export default function Home() {
+export default function Home() {
   return (
     <main style={{ fontFamily: "Arial, sans-serif", margin: 0, padding: 0 }}>
 
@@ -13,12 +13,12 @@
           Country Roads Floor Inspection
         </h1>
         <h2 style={{ fontWeight: "normal", marginBottom: "20px" }}>
-          5-Star Rated CFIU Certified Floor Inspector in West Virginia
+          5-Star CFIU Certified Floor Inspector Serving Baltimore, Washington DC & Surrounding Areas
         </h2>
-        <p style={{ maxWidth: "750px", margin: "0 auto 30px auto" }}>
-          Based in Romney, WV and serving a 3-hour radius.
-          Over 10 years of professional hardwood, laminate,
-          vinyl plank, and carpet installation experience.
+        <p style={{ maxWidth: "800px", margin: "0 auto 30px auto" }}>
+          Professional hardwood, laminate, vinyl plank and carpet inspection services
+          across Maryland, Washington DC, Northern Virginia, and West Virginia.
+          Backed by over 10 years of hands-on installation experience.
         </p>
         <a href="tel:13047039675"
           style={{
@@ -33,7 +33,7 @@
         </a>
       </section>
 
-      {/* GOOGLE REVIEWS SECTION */}
+      {/* GOOGLE REVIEWS */}
       <section style={{ padding: "60px 20px", maxWidth: "1000px", margin: "auto", textAlign: "center" }}>
         <h2>Top-Rated Floor Inspector on Google</h2>
         <p style={{ fontSize: "20px", fontWeight: "bold" }}>
@@ -41,36 +41,38 @@
         </p>
         <p>
           Trusted by homeowners, contractors, retailers, and manufacturers
-          throughout West Virginia for accurate, unbiased inspection reports.
+          throughout Baltimore MD, Washington DC, Winchester VA,
+          and West Virginia.
         </p>
       </section>
 
-      {/* AUTHORITY SECTION */}
+      {/* AUTHORITY */}
       <section style={{ background: "#f4f4f4", padding: "60px 20px" }}>
         <div style={{ maxWidth: "1000px", margin: "auto" }}>
           <h2>Professional Floor Inspection Services</h2>
           <ul style={{ lineHeight: "1.8" }}>
             <li>CFIU Certified Soft Surface & Hard Surface Inspector</li>
             <li>10+ Years Hands-On Installation Experience</li>
-            <li>Hardwood, Laminate, Vinyl Plank & Carpet Systems</li>
-            <li>Moisture Testing & Subfloor Analysis</li>
+            <li>Hardwood, Engineered Wood & Moisture Failure Analysis</li>
+            <li>Laminate & Vinyl Plank System Evaluation</li>
+            <li>Carpet & Soft Surface Inspections</li>
             <li>Unbiased Third-Party Inspection Reports</li>
-            <li>Installation & Product Failure Investigations</li>
           </ul>
         </div>
       </section>
 
-      {/* SERVICE AREA SEO */}
+      {/* SERVICE AREA */}
       <section style={{ padding: "60px 20px", maxWidth: "1000px", margin: "auto" }}>
-        <h2>Serving West Virginia & Surrounding Areas</h2>
+        <h2>Service Areas</h2>
         <p>
-          Based in Romney, West Virginia and servicing approximately
-          a 3-hour radius including:
+          Primary service areas include Baltimore, Maryland and Washington DC,
+          with frequent inspections performed in Winchester, Virginia.
         </p>
         <p>
+          Also serving a 3-hour radius from Romney, West Virginia including
           Charleston WV, Morgantown WV, Martinsburg WV, Clarksburg WV,
-          Parkersburg WV, Beckley WV, Huntington WV, Wheeling WV,
-          Fairmont WV and surrounding communities.
+          Parkersburg WV, Beckley WV, Huntington WV, Wheeling WV and
+          surrounding communities.
         </p>
       </section>
 
@@ -83,7 +85,7 @@
       }}>
         <h2>Need a Certified Floor Inspection?</h2>
         <p>
-          Call today to schedule a professional inspection report.
+          Call today to schedule your professional inspection.
         </p>
         <a href="tel:13047039675"
           style={{
@@ -98,7 +100,7 @@
         </a>
       </section>
 
-      {/* SEO FOOTER */}
+      {/* FOOTER SEO */}
       <footer style={{
         background: "#111",
         color: "#aaa",
@@ -106,9 +108,10 @@
         textAlign: "center",
         fontSize: "14px"
       }}>
-        Country Roads Floor Inspection | Romney, West Virginia |
-        Phone: (304) 703-9675 |
-        5-Star Rated CFIU Certified Floor Inspector Serving West Virginia
+        Country Roads Floor Inspection |
+        5-Star CFIU Certified Floor Inspector |
+        Serving Baltimore MD, Washington DC, Winchester VA & West Virginia |
+        Phone: (304) 703-9675
       </footer>
 
     </main>
