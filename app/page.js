@@ -1,111 +1,113 @@
 export default function Home() {
   return (
-    <main style={{ padding: "80px 20px", maxWidth: "1000px", margin: "auto", textAlign: "center" }}>
-      
-      <h1 style={{ fontSize: "40px", marginBottom: "20px" }}>
-        Certified Floor Inspector Serving MD, DC, VA & WV
-      </h1>
+    <main style={{ fontFamily: "Arial, sans-serif" }}>
 
-      <p style={{ fontSize: "20px", marginBottom: "30px" }}>
-        5-Star CFIU Certified Inspector with 10+ Years of Installation Experience.
-        Unbiased Third-Party Reports for Hardwood, LVP, Laminate & Carpet.
-      </p>
+      {/* HERO SECTION */}
+      <section style={{
+        backgroundColor: "#1a1a1a",
+        color: "white",
+        padding: "80px 20px",
+        textAlign: "center"
+      }}>
+        <h1 style={{ fontSize: "42px", marginBottom: "20px" }}>
+          Country Roads Floor Inspection
+        </h1>
+        <p style={{ fontSize: "20px", maxWidth: "700px", margin: "0 auto" }}>
+          Independent Floor Covering Inspection Services for Retailers,
+          Manufacturers, and Homeowners.
+        </p>
+      </section>
 
-      <a
-        href="tel:13047039675"
-        style={{
-          background: "#d4af37",
-          color: "#111",
-          padding: "15px 30px",
-          fontSize: "20px",
-          fontWeight: "bold",
-          textDecoration: "none",
-          borderRadius: "6px"
-        }}
-      >
-        Call Now: (304) 703-9675
-      </a>
+      {/* ABOUT SECTION */}
+      <section style={{ padding: "60px 20px", maxWidth: "1000px", margin: "0 auto" }}>
+        <h2>Professional Floor Inspections</h2>
+        <p style={{ lineHeight: "1.6", marginTop: "20px" }}>
+          We provide detailed and unbiased flooring inspections for carpet,
+          hardwood, laminate, vinyl, and tile installations. Our evaluations
+          include installation concerns, manufacturing defects, site
+          conditions, and performance-related issues.
+        </p>
 
-      <p style={{ marginTop: "25px", fontWeight: "bold" }}>
-        ⭐⭐⭐⭐⭐ 5-Star Rated on Google
-      </p>
+        <p style={{ lineHeight: "1.6", marginTop: "20px" }}>
+          Common inspection concerns include pulled tufts, seam issues,
+          peaking, buckling, moisture-related problems, and premature wear.
+          Each inspection includes thorough documentation and photographic
+          evidence to support findings.
+        </p>
+      </section>
 
-      <div style={{ marginTop: "70px", textAlign: "left" }}>
-        <h2 style={{ fontSize: "28px", marginBottom: "20px" }}>
-          Why Hire a Certified Floor Inspector?
+      {/* SERVICE AREAS */}
+      <section style={{ backgroundColor: "#f4f4f4", padding: "60px 20px" }}>
+        <div style={{ maxWidth: "1000px", margin: "0 auto" }}>
+          <h2>Service Areas</h2>
+          <p style={{ marginTop: "20px", lineHeight: "1.6" }}>
+            Winchester, VA <br />
+            Frederick, MD <br />
+            Hagerstown, MD <br />
+            Washington, DC <br />
+            Baltimore, MD
+          </p>
+        </div>
+      </section>
+
+      {/* PHOTO GALLERY */}
+      <section style={{ padding: "60px 20px" }}>
+        <h2 style={{ textAlign: "center", marginBottom: "40px" }}>
+          Recent Inspection Photos
         </h2>
 
-        <ul style={{ fontSize: "18px", lineHeight: "1.8" }}>
-          <li>✔ Certified CFIU Inspector</li>
-          <li>✔ 10+ Years Flooring Installation Experience</li>
-          <li>✔ Unbiased Third-Party Inspection Reports</li>
-          <li>✔ Detailed Moisture & Subfloor Testing</li>
-          <li>✔ Trusted by Homeowners, Contractors & Attorneys</li>
-        </ul>
-      </div>
-
-      <div style={{ marginTop: "70px" }}>
-        <h2 style={{ fontSize: "28px", marginBottom: "20px" }}>
-          Request an Inspection
-        </h2>
-
-        <form
-          action="https://formsubmit.co/rogerlnestor@gmail.com"
-          method="POST"
-          style={{ maxWidth: "600px", margin: "auto", textAlign: "left" }}
+        <div
+          style={{
+            display: "grid",
+            gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
+            gap: "20px",
+            maxWidth: "1200px",
+            margin: "0 auto",
+          }}
         >
-          <input type="hidden" name="_captcha" value="false" />
+          {[
+            "/images/1-Jan 03 2026 07_46pm-kA7v.jpg",
+            "/images/2-Aug 13 2025 07_55pm-7juX.jpg",
+            "/images/2-Jan 03 2026 09_18pm-yQCx.jpg",
+            "/images/2-Jan 30 2026 05_20pm-GK6q.jpg",
+            "/images/3-Jan 03 2026 09_37pm-VenF.jpg",
+            "/images/3-Jan 30 2026 05_31pm-DKpj.jpg",
+            "/images/Website pic 2.jpg",
+            "/images/Website pics 1.jpg",
+          ].map((src, index) => (
+            <img
+              key={index}
+              src={src}
+              alt="Floor inspection"
+              style={{
+                width: "100%",
+                height: "250px",
+                objectFit: "cover",
+                borderRadius: "10px",
+              }}
+            />
+          ))}
+        </div>
+      </section>
 
-          <input
-            type="text"
-            name="name"
-            placeholder="Full Name"
-            required
-            style={{ width: "100%", padding: "12px", marginBottom: "15px" }}
-          />
-
-          <input
-            type="tel"
-            name="phone"
-            placeholder="Phone Number"
-            required
-            style={{ width: "100%", padding: "12px", marginBottom: "15px" }}
-          />
-
-          <input
-            type="email"
-            name="email"
-            placeholder="Email Address"
-            required
-            style={{ width: "100%", padding: "12px", marginBottom: "15px" }}
-          />
-
-          <textarea
-            name="message"
-            placeholder="Briefly describe the flooring issue..."
-            rows="4"
-            required
-            style={{ width: "100%", padding: "12px", marginBottom: "15px" }}
-          ></textarea>
-
-          <button
-            type="submit"
-            style={{
-              width: "100%",
-              background: "#111",
-              color: "#fff",
-              padding: "15px",
-              fontSize: "18px",
-              fontWeight: "bold",
-              border: "none",
-              borderRadius: "6px"
-            }}
-          >
-            Submit Inspection Request
-          </button>
-        </form>
-      </div>
+      {/* CONTACT SECTION */}
+      <section style={{
+        backgroundColor: "#1a1a1a",
+        color: "white",
+        padding: "60px 20px",
+        textAlign: "center"
+      }}>
+        <h2>Contact</h2>
+        <p style={{ marginTop: "20px" }}>
+          For inspection scheduling or questions regarding your report,
+          please call or email.
+        </p>
+        <p style={{ marginTop: "10px", fontWeight: "bold" }}>
+          Phone: (Your Phone Number Here)
+        </p>
+      </section>
 
     </main>
   );
 }
+
