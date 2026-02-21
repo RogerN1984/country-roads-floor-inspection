@@ -1,46 +1,60 @@
 export default function Home() {
   return (
-    <main style={{ fontFamily: "Arial, sans-serif" }}>
+    <main style={{ fontFamily: "Arial, sans-serif", margin: 0 }}>
 
       {/* HERO SECTION */}
-      <section style={{
-        backgroundColor: "#1a1a1a",
-        color: "white",
-        padding: "80px 20px",
-        textAlign: "center"
-      }}>
-        <h1 style={{ fontSize: "42px", marginBottom: "20px" }}>
+      <section
+        style={{
+          background: "linear-gradient(to right, #111, #222)",
+          color: "white",
+          padding: "100px 20px",
+          textAlign: "center",
+        }}
+      >
+        <h1 style={{ fontSize: "48px", marginBottom: "20px" }}>
           Country Roads Floor Inspection
         </h1>
-        <p style={{ fontSize: "20px", maxWidth: "700px", margin: "0 auto" }}>
-          Independent Floor Covering Inspection Services for Retailers,
-          Manufacturers, and Homeowners.
+
+        <p style={{ fontSize: "20px", maxWidth: "800px", margin: "0 auto" }}>
+          Independent and Unbiased Floor Covering Inspection Services
+          for Retailers, Manufacturers, and Homeowners.
         </p>
       </section>
 
       {/* ABOUT SECTION */}
-      <section style={{ padding: "60px 20px", maxWidth: "1000px", margin: "0 auto" }}>
-        <h2>Professional Floor Inspections</h2>
-        <p style={{ lineHeight: "1.6", marginTop: "20px" }}>
-          We provide detailed and unbiased flooring inspections for carpet,
-          hardwood, laminate, vinyl, and tile installations. Our evaluations
-          include installation concerns, manufacturing defects, site
-          conditions, and performance-related issues.
+      <section
+        style={{
+          padding: "80px 20px",
+          maxWidth: "1400px",
+          margin: "0 auto",
+        }}
+      >
+        <h2 style={{ fontSize: "34px" }}>Professional Flooring Inspections</h2>
+
+        <p style={{ marginTop: "20px", lineHeight: "1.7", fontSize: "18px" }}>
+          We provide comprehensive inspection services for carpet, hardwood,
+          laminate, luxury vinyl plank (LVP), and tile installations.
+          Our reports evaluate installation quality, manufacturing defects,
+          site conditions, and performance-related concerns.
         </p>
 
-        <p style={{ lineHeight: "1.6", marginTop: "20px" }}>
-          Common inspection concerns include pulled tufts, seam issues,
-          peaking, buckling, moisture-related problems, and premature wear.
-          Each inspection includes thorough documentation and photographic
-          evidence to support findings.
+        <p style={{ marginTop: "20px", lineHeight: "1.7", fontSize: "18px" }}>
+          Each inspection includes detailed documentation, moisture testing
+          when required, and photographic evidence supporting our findings.
         </p>
       </section>
 
       {/* SERVICE AREAS */}
-      <section style={{ backgroundColor: "#f4f4f4", padding: "60px 20px" }}>
-        <div style={{ maxWidth: "1000px", margin: "0 auto" }}>
-          <h2>Service Areas</h2>
-          <p style={{ marginTop: "20px", lineHeight: "1.6" }}>
+      <section
+        style={{
+          backgroundColor: "#f4f4f4",
+          padding: "80px 20px",
+        }}
+      >
+        <div style={{ maxWidth: "1400px", margin: "0 auto" }}>
+          <h2 style={{ fontSize: "32px" }}>Service Areas</h2>
+
+          <p style={{ marginTop: "20px", fontSize: "18px", lineHeight: "1.6" }}>
             Winchester, VA <br />
             Frederick, MD <br />
             Hagerstown, MD <br />
@@ -51,39 +65,42 @@ export default function Home() {
       </section>
 
       {/* PHOTO GALLERY */}
-      <section style={{ padding: "60px 20px" }}>
-        <h2 style={{ textAlign: "center", marginBottom: "40px" }}>
-          Recent Inspection Photos
+      <section
+        style={{
+          padding: "80px 20px",
+          maxWidth: "1600px",
+          margin: "0 auto",
+        }}
+      >
+        <h2 style={{ textAlign: "center", fontSize: "32px", marginBottom: "50px" }}>
+          Recent Inspection Examples
         </h2>
 
         <div
           style={{
             display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
-            gap: "20px",
-            maxWidth: "1200px",
-            margin: "0 auto",
+            gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
+            gap: "25px",
           }}
         >
           {[
-            "/images/1-Jan 03 2026 07_46pm-kA7v.jpg",
-            "/images/2-Aug 13 2025 07_55pm-7juX.jpg",
-            "/images/2-Jan 03 2026 09_18pm-yQCx.jpg",
-            "/images/2-Jan 30 2026 05_20pm-GK6q.jpg",
-            "/images/3-Jan 03 2026 09_37pm-VenF.jpg",
-            "/images/3-Jan 30 2026 05_31pm-DKpj.jpg",
-            "/images/Website pic 2.jpg",
-            "/images/Website pics 1.jpg",
+            "/images/inspection-1.jpg",
+            "/images/inspection-2.jpg",
+            "/images/inspection-3.jpg",
+            "/images/inspection-4.jpg",
+            "/images/inspection-5.jpg",
+            "/images/inspection-6.jpg",
           ].map((src, index) => (
             <img
               key={index}
               src={src}
-              alt="Floor inspection"
+              alt="Floor inspection example"
               style={{
                 width: "100%",
-                height: "250px",
+                height: "320px",
                 objectFit: "cover",
-                borderRadius: "10px",
+                borderRadius: "14px",
+                boxShadow: "0 8px 20px rgba(0,0,0,0.15)",
               }}
             />
           ))}
@@ -91,23 +108,34 @@ export default function Home() {
       </section>
 
       {/* CONTACT SECTION */}
-      <section style={{
-        backgroundColor: "#1a1a1a",
-        color: "white",
-        padding: "60px 20px",
-        textAlign: "center"
-      }}>
-        <h2>Contact</h2>
-        <p style={{ marginTop: "20px" }}>
-          For inspection scheduling or questions regarding your report,
-          please call or email.
+      <section
+        style={{
+          backgroundColor: "#111",
+          color: "white",
+          padding: "100px 20px",
+          textAlign: "center",
+        }}
+      >
+        <h2 style={{ fontSize: "36px", marginBottom: "20px" }}>
+          Schedule an Inspection
+        </h2>
+
+        <p style={{ fontSize: "20px", maxWidth: "700px", margin: "0 auto 30px" }}>
+          Retailers, manufacturers, and homeowners may contact directly
+          for inspection scheduling or report clarification.
         </p>
-        <p style={{ marginTop: "10px", fontWeight: "bold" }}>
-          Phone: (Your Phone Number Here)
+
+        <p style={{ fontSize: "24px", fontWeight: "bold" }}>
+          📞 (Your Phone Number Here)
+        </p>
+
+        <p style={{ marginTop: "15px", fontSize: "16px", opacity: 0.8 }}>
+          Serving Virginia, Maryland & Washington, DC
         </p>
       </section>
 
     </main>
   );
 }
+
 
