@@ -84,26 +84,28 @@ export default function Home() {
           }}
         >
           {[
-            "/images/inspection-1.jpg",
-            "/images/inspection-2.jpg",
-            "/images/inspection-3.jpg",
-            "/images/inspection-4.jpg",
-            "/images/inspection-5.jpg",
-            "/images/inspection-6.jpg",
-          ].map((src, index) => (
-            <img
-              key={index}
-              src={src}
-              alt="Floor inspection example"
-              style={{
-                width: "100%",
-                height: "320px",
-                objectFit: "cover",
-                borderRadius: "14px",
-                boxShadow: "0 8px 20px rgba(0,0,0,0.15)",
-              }}
-            />
-          ))}
+  "/images/inspection-1.jpg.jpg",
+  "/images/inspection-2.jpg.jpg",
+  "/images/inspection-3.jpg.jpg",
+  "/images/inspection-4.jpg.jpg",
+  "/images/inspection-5.jpg.jpg",
+  "/images/inspection-6.jpg.jpg",
+  "/images/inspection-7.jpg.jpg",
+].map((src, index) => (
+  <img
+    key={index}
+    src={src}
+    alt="Floor inspection example"
+    style={{
+      width: "100%",
+      height: "320px",
+      objectFit: "cover",
+      borderRadius: "14px",
+      boxShadow: "0 8px 20px rgba(0,0,0,0.15)",
+    }}
+  />
+))}
+
         </div>
       </section>
 
