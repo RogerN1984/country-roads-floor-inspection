@@ -126,7 +126,7 @@ export default function Home() {
         </p>
 
         <p style={{ fontSize: "24px", fontWeight: "bold" }}>
-          📞 (Your Phone Number Here)
+          📞 (304-703-9675)
         </p>
 
         <p style={{ marginTop: "15px", fontSize: "16px", opacity: 0.8 }}>
