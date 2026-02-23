@@ -95,6 +95,56 @@ export default function Home() {
           </div>
         </div>
       </section>
+"use client";
+
+import { useState } from "react";
+
+export default function ContactForm() {
+  const [status, setStatus] = useState("");
+
+  async function handleSubmit(e) {
+    e.preventDefault();
+    setStatus("Sending...");
+
+    const formData = new FormData(e.target);
+
+    const response = await fetch("/api/contact", {
+      method: "POST",
+      body: JSON.stringify({
+        name: formData.get("name"),
+        email: formData.get("email"),
+        phone: formData.get("phone"),
+        message: formData.get("message"),
+      }),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+
+    if (response.ok) {
+      setStatus("Message sent successfully!");
+      e.target.reset();
+    } else {
+      setStatus("Something went wrong.");
+    }
+  }
+
+  return (
+    <section style={{ padding: "60px 20px", maxWidth: "600px", margin: "0 auto" }}>
+      <h2>Contact Us</h2>
+
+      <form onSubmit={handleSubmit} style={{ display: "flex", flexDirection: "column", gap: "15px" }}>
+        <input name="name" placeholder="Your Name" required />
+        <input name="email" type="email" placeholder="Your Email" required />
+        <input name="phone" placeholder="Phone (optional)" />
+        <textarea name="message" placeholder="Your Message" required />
+        <button type="submit">Send Message</button>
+      </form>
+
+      {status && <p>{status}</p>}
+    </section>
+  );
+}
 
       {/* ABOUT / CREDIBILITY */}
       <section style={{ padding: "100px 20px", maxWidth: "1500px", margin: "0 auto" }}>
