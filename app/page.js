@@ -7,137 +7,147 @@ export default function Home() {
         style={{
           background: "linear-gradient(to right, #111, #222)",
           color: "white",
-          padding: "100px 20px",
+          padding: "120px 20px",
           textAlign: "center",
         }}
       >
-        <h1 style={{ fontSize: "48px", marginBottom: "20px" }}>
+        <h1 style={{ fontSize: "52px", marginBottom: "20px" }}>
           Country Roads Floor Inspection
         </h1>
 
-        <p style={{ fontSize: "20px", maxWidth: "800px", margin: "0 auto" }}>
-          Independent and Unbiased Floor Covering Inspection Services
-          for Retailers, Manufacturers, and Homeowners.
-        </p>
-      </section>
-
-      {/* ABOUT SECTION */}
-      <section
-        style={{
-          padding: "80px 20px",
-          maxWidth: "1400px",
-          margin: "0 auto",
-        }}
-      >
-        <h2 style={{ fontSize: "34px" }}>Professional Flooring Inspections</h2>
-
-        <p style={{ marginTop: "20px", lineHeight: "1.7", fontSize: "18px" }}>
-          We provide comprehensive inspection services for carpet, hardwood,
-          laminate, luxury vinyl plank (LVP), and tile installations.
-          Our reports evaluate installation quality, manufacturing defects,
-          site conditions, and performance-related concerns.
+        <p style={{ fontSize: "22px", maxWidth: "800px", margin: "0 auto 30px" }}>
+          Independent • Unbiased • Professional Floor Covering Inspections
         </p>
 
-        <p style={{ marginTop: "20px", lineHeight: "1.7", fontSize: "18px" }}>
-          Each inspection includes detailed documentation, moisture testing
-          when required, and photographic evidence supporting our findings.
-        </p>
-      </section>
-
-      {/* SERVICE AREAS */}
-      <section
-        style={{
-          backgroundColor: "#f4f4f4",
-          padding: "80px 20px",
-        }}
-      >
-        <div style={{ maxWidth: "1400px", margin: "0 auto" }}>
-          <h2 style={{ fontSize: "32px" }}>Service Areas</h2>
-
-          <p style={{ marginTop: "20px", fontSize: "18px", lineHeight: "1.6" }}>
-            Winchester, VA <br />
-            Frederick, MD <br />
-            Hagerstown, MD <br />
-            Washington, DC <br />
-            Baltimore, MD
-          </p>
-        </div>
-      </section>
-
-      {/* PHOTO GALLERY */}
-      <section
-        style={{
-          padding: "80px 20px",
-          maxWidth: "1600px",
-          margin: "0 auto",
-        }}
-      >
-        <h2 style={{ textAlign: "center", fontSize: "32px", marginBottom: "50px" }}>
-          Recent Inspection Examples
-        </h2>
-
-        <div
+        <a
+          href="tel:3047039675"
           style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
-            gap: "25px",
+            backgroundColor: "#ffffff",
+            color: "#111",
+            padding: "15px 30px",
+            borderRadius: "8px",
+            textDecoration: "none",
+            fontWeight: "bold",
+            fontSize: "18px",
           }}
         >
-          {[
-  "/images/inspection-1.jpg.jpg",
-  "/images/inspection-2.jpg.jpg",
-  "/images/inspection-3.jpg.jpg",
-  "/images/inspection-4.jpg.jpg",
-  "/images/inspection-5.jpg.jpg",
-  "/images/inspection-6.jpg.jpg",
-  "/images/inspection-7.jpg.jpg",
-].map((src, index) => (
-  <img
-    key={index}
-    src={src}
-    alt="Floor inspection example"
-    style={{
-      width: "100%",
-      height: "320px",
-      objectFit: "cover",
-      borderRadius: "14px",
-      boxShadow: "0 8px 20px rgba(0,0,0,0.15)",
-    }}
-  />
-))}
+          Call Now
+        </a>
+      </section>
 
+      {/* SERVICES SECTION */}
+      <section style={{ padding: "90px 20px", maxWidth: "1500px", margin: "0 auto" }}>
+        <h2 style={{ fontSize: "36px", marginBottom: "30px" }}>
+          Inspection Services
+        </h2>
+
+        <div style={{ lineHeight: "1.8", fontSize: "18px" }}>
+          <p>• Carpet Installation & Manufacturing Issues</p>
+          <p>• Hardwood Cupping, Buckling & Gapping</p>
+          <p>• Luxury Vinyl Plank (LVP) Locking Failures</p>
+          <p>• Laminate & Engineered Wood Defects</p>
+          <p>• Tile Cracking & Subfloor Concerns</p>
+          <p>• Moisture Testing & Site Condition Evaluation</p>
         </div>
       </section>
 
-      {/* CONTACT SECTION */}
+      {/* GALLERY */}
+      <section
+        style={{
+          backgroundColor: "#f5f5f5",
+          padding: "100px 20px",
+        }}
+      >
+        <div style={{ maxWidth: "1600px", margin: "0 auto" }}>
+          <h2 style={{ textAlign: "center", fontSize: "36px", marginBottom: "50px" }}>
+            Recent Inspection Examples
+          </h2>
+
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))",
+              gap: "30px",
+            }}
+          >
+            {[
+              "/images/inspection-1.jpg.jpg",
+              "/images/inspection-2.jpg.jpg",
+              "/images/inspection-3.jpg.jpg",
+              "/images/inspection-4.jpg.jpg",
+              "/images/inspection-5.jpg.jpg",
+              "/images/inspection-6.jpg.jpg",
+              "/images/inspection-7.jpg.jpg",
+            ].map((src, index) => (
+              <img
+                key={index}
+                src={src}
+                alt="Floor inspection example"
+                style={{
+                  width: "100%",
+                  height: "350px",
+                  objectFit: "cover",
+                  borderRadius: "16px",
+                  boxShadow: "0 10px 25px rgba(0,0,0,0.15)",
+                }}
+              />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ABOUT / CREDIBILITY */}
+      <section style={{ padding: "100px 20px", maxWidth: "1500px", margin: "0 auto" }}>
+        <h2 style={{ fontSize: "36px", marginBottom: "30px" }}>
+          Professional & Unbiased Reporting
+        </h2>
+
+        <p style={{ fontSize: "18px", lineHeight: "1.8" }}>
+          Each inspection includes detailed documentation, measurements,
+          moisture analysis when required, and photographic evidence.
+          Reports are written clearly and objectively to assist retailers,
+          manufacturers, installers, and homeowners in understanding
+          installation conditions and product performance.
+        </p>
+      </section>
+
+      {/* CONTACT ME NOW SECTION */}
       <section
         style={{
           backgroundColor: "#111",
           color: "white",
-          padding: "100px 20px",
+          padding: "120px 20px",
           textAlign: "center",
         }}
       >
-        <h2 style={{ fontSize: "36px", marginBottom: "20px" }}>
-          Schedule an Inspection
+        <h2 style={{ fontSize: "42px", marginBottom: "20px" }}>
+          Contact Me Now
         </h2>
 
-        <p style={{ fontSize: "20px", maxWidth: "700px", margin: "0 auto 30px" }}>
-          Retailers, manufacturers, and homeowners may contact directly
-          for inspection scheduling or report clarification.
+        <p style={{ fontSize: "22px", marginBottom: "30px" }}>
+          Schedule an inspection or request additional information.
         </p>
 
-        <p style={{ fontSize: "24px", fontWeight: "bold" }}>
-          📞 (304-703-9675)
-        </p>
+        <a
+          href="tel:3047039675"
+          style={{
+            backgroundColor: "#ffffff",
+            color: "#111",
+            padding: "18px 40px",
+            borderRadius: "10px",
+            textDecoration: "none",
+            fontWeight: "bold",
+            fontSize: "20px",
+          }}
+        >
+          📞 304-703-9675
+        </a>
 
-        <p style={{ marginTop: "15px", fontSize: "16px", opacity: 0.8 }}>
-          Serving Virginia, Maryland & Washington, DC
+        <p style={{ marginTop: "30px", opacity: 0.7 }}>
+          Serving Virginia • Maryland • Washington DC
         </p>
       </section>
 
     </main>
   );
 }
-
-
