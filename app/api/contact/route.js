@@ -1,8 +1,18 @@
+export const runtime = "nodejs";
+
 import nodemailer from "nodemailer";
 
 export async function POST(req) {
   try {
-    const { name, email, message } = await req.json();
+    const body = await req.json();
+    const { name, email, phone, message } = body;
+
+    if (!name || !email || !message) {
+      return new Response(
+        JSON.stringify({ error: "Missing required fields" }),
+        { status: 400 }
+      );
+    }
 
     const transporter = nodemailer.createTransport({
       service: "gmail",
@@ -13,21 +23,28 @@ export async function POST(req) {
     });
 
     await transporter.sendMail({
-      from: email,
+      from: `"Country Roads Floor Inspection" <${process.env.EMAIL_USER}>`,
       to: process.env.EMAIL_USER,
-      subject: `New Inspection Request from ${name}`,
-      text: `
-Name: ${name}
-Email: ${email}
-
-Message:
-${message}
+      subject: "New Contact Form Submission",
+      html: `
+        <h2>New Contact Request</h2>
+        <p><strong>Name:</strong> ${name}</p>
+        <p><strong>Email:</strong> ${email}</p>
+        <p><strong>Phone:</strong> ${phone || "N/A"}</p>
+        <p><strong>Message:</strong><br/>${message}</p>
       `,
     });
 
-    return Response.json({ success: true });
+    return new Response(
+      JSON.stringify({ success: true }),
+      { status: 200 }
+    );
   } catch (error) {
-    console.error(error);
-    return Response.json({ success: false }, { status: 500 });
+    console.error("Email error:", error);
+    return new Response(
+      JSON.stringify({ error: "Failed to send email" }),
+      { status: 500 }
+    );
   }
 }
+
